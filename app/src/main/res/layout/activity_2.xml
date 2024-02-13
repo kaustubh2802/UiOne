@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg9"
+    tools:context=".Activity2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#525353"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+            <!--            batter indicator-->
+            <TextView
+                android:id="@+id/batterylevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- User Icon -->
+            <ImageView
+                android:id="@+id/userIcon1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_baseline_person_24" />
+
+            <!-- Username TextView -->
+            <TextView
+                android:id="@+id/usernameText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center_horizontal"
+                android:text="@string/hi_user"
+                android:textColor="#2196F3"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        tools:ignore="UselessParent">
+
+
+        <!--    //linear1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/leftIcon"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="@drawable/shape1"-->
+<!--                android:contentDescription="@string/demo"-->
+
+<!--                android:src="@drawable/b360" />-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo_youtube" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="80dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#4BDCD9D9"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#C91F84FF"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/text_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="#C90C0C0C"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgview3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/imgview3" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgview5"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/imgview5" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgview6"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/imgview6" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/shape1"
+                    android:contentDescription="@string/demo"
+                    android:padding="0dp"
+                    android:src="@drawable/logo1" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/username"
+
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:autofillHints="123"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="@string/u_name"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#FFFFFF"
+                android:elevation="2dp"
+                android:text="@string/login"
+                android:textColor="#818080"
+                android:textSize="18sp"
+                android:theme="@style/Theme.AppCompat.DayNight"
+                android:translationZ="2dp"
+                app:cornerRadius="20dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+    <!--            <LinearLayout-->
+    <!--                android:layout_width="match_parent"-->
+
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="10dp"-->
+    <!--                android:gravity="center_horizontal"-->
+    <!--                android:orientation="horizontal"-->
+    <!--                android:padding="5dp">-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/img5"-->
+    <!--                    android:layout_width="60dp"-->
+    <!--                    android:layout_height="60dp"-->
+    <!--                    android:layout_marginTop="5dp"-->
+    <!--                    android:background="@drawable/shape1"-->
+    <!--                    android:src="@drawable/logo1" />-->
+
+    <!--                <ImageView-->
+    <!--                    android:id="@+id/img6"-->
+    <!--                    android:layout_width="60dp"-->
+    <!--                    android:layout_height="60dp"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:background="@drawable/shape1"-->
+    <!--                    android:contentDescription="@string/demo"-->
+
+    <!--                    android:src="@drawable/logo1" />-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/btn2"-->
+    <!--                    android:layout_width="200dp"-->
+    <!--                    android:layout_height="60dp"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:layout_marginTop="25dp"-->
+    <!--                    android:backgroundTint="#F89453"-->
+    <!--                    android:elevation="2dp"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:padding="5dp"-->
+    <!--                    android:text="@string/demo"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:textSize="18sp"-->
+    <!--                    android:translationZ="2dp"-->
+    <!--                    app:cornerRadius="20dp" />-->
+
+    <!--            </LinearLayout>-->

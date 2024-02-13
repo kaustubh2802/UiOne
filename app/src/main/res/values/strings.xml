@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UiOne</string>
+    <string name="u_name">Username</string>
+    <string name="pass">Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="demo">Demo Text</string>
+    <string name="str1">Study hard, pursue your goals, and success will follow.</string>
+    <string name="hi_user">Hi, Kaustubh Bhole</string>
+    <string name="todo">todo</string>
+    <string name="version_name">Version Name</string>
+    <string name="version">Version</string>
+    <string name="next">Next</string>
+</resources>
