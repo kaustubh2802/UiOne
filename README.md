@@ -13,6 +13,7 @@ Resources: XML for layout design, SharedPreferences for data storage.
 Features:
 Secure storage of user credentials using SharedPreferences.
 Simple and intuitive user interface for login functionality.
+
 Efficient validation to ensure data integrity and security.
 How to Use:
 Clone the repository to your local machine.
