@@ -11,7 +11,7 @@
         android:id="@+id/toolbar1"
         android:layout_width="match_parent"
         android:layout_height="30dp"
-        android:background="#525353"
+        android:background="#AD66EAEA"
         android:gravity="center_horizontal">
 
         <LinearLayout
@@ -20,14 +20,7 @@
             android:orientation="horizontal"
             tools:ignore="UseCompoundDrawables">
             <!--            batter indicator-->
-            <TextView
-                android:id="@+id/batterylevel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+
 
             <!-- User Icon -->
             <ImageView
@@ -45,8 +38,19 @@
                 android:layout_marginStart="8dp"
                 android:gravity="center_horizontal"
                 android:text="@string/hi_user"
-                android:textColor="#2196F3"
+                android:textColor="@color/white"
                 android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/batterylevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
 
 
         </LinearLayout>

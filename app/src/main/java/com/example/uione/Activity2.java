@@ -78,7 +78,7 @@ public class Activity2 extends AppCompatActivity {
             @Override
             public void onReceive(Context context, Intent intent) {
                 int level = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0);
-                batteryLevelTextView.setText("Battery Level: " + level + "%");
+                batteryLevelTextView.setText(level + "%");
             }
         };
 

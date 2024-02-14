@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
-
-
     <!-- Add the INTERNET permission here -->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-
-    <!-- Add the VIBRATE permission here -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Add the VIBRATE permission here -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
-
-
-    <!-- me change kola ahe=  android:theme="@style/Theme.UiOne" -->
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -23,6 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight"
         tools:targetApi="31">
+        <activity
+            android:name=".Activity6"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".Activity5"
             android:exported="false">

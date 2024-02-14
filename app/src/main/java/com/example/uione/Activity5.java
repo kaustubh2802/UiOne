@@ -1,16 +1,21 @@
 package com.example.uione;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 public class Activity5 extends AppCompatActivity {
 
-    ArrayList arrayList1;
+    ArrayList<GridPojo> arrayList1;
 //    ArrayList<GridPojo> arrayList1;
     RecyclerView recyclerView1;
     GridItemAdapter adapterRecycler1;
+    Button btn5;
 
 
     @Override
@@ -28,6 +33,17 @@ public class Activity5 extends AppCompatActivity {
 
         adapterRecycler1 = new GridItemAdapter(this, arrayList1);
         recyclerView1.setAdapter(adapterRecycler1);
+
+
+        //intent to move to the next activity
+        btn5 = findViewById(R.id.btn5);
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Activity5.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void gridListData(){
